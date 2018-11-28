@@ -4,12 +4,12 @@ body, html {
 	height: 100%;
 	position: relative;
 	overflow: hidden;
-	background-image: url(../img/bg.jpg);
+	background-color: #1A0D28;
 	background-position: center;
 	background-size: cover;
 	font-family: 'Museo-300', "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	color: white;
-
+	overflow-x: hidden;
 }
 h2
 {
@@ -43,16 +43,16 @@ p
 	  {
 		  text-decoration: none;
 	  }
-/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+
 .row.content {
 	height: 100%;
 	position: relative;
 }
-/* Set gray background color and 100% height */
+
 .sidenav {
 	height: 100%;
 }
-/* Set black background color, white text and some padding */
+
 footer {
 	background-color: #555;
 	color: white;
@@ -74,6 +74,7 @@ footer {
 	height: 100%;
 	float: right;
 	margin-right: 10%;
+	text-align: right;
 }
 footer {
 	background-color: transparent;
@@ -90,8 +91,12 @@ footer {
 }
 .address {
 	float: left;
-	color: #9be0d3;
+	color: white;
 	
+}
+.address a
+{
+	color:white;
 }
 .address p
 {
@@ -108,7 +113,7 @@ nav ul {
     display: inline-block;
     list-style: none;
     margin: 0;
-    font-size: 19px;
+    font-size: 21px;
     letter-spacing: 5px;
 }
 nav ul li {
@@ -151,6 +156,18 @@ nav ul .active a
 	align-items: center;
 	float: right;
 }
+
+.new-principal-img
+{
+	height: 100%;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+}
+
+
 .img-principal img {
 	display: inline-block;
 }
@@ -163,18 +180,77 @@ nav ul .active a
 	float: left;
 	flex-direction: column;
 }
-.actions img {
+.new-actions {
+	height: 100%;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	flex-direction: column;
+}
+.actions img,.new-actions img {
 	display: inline-block;
 	width: 80%;
 }
 .malla {
 	position: fixed;
-	top: -200px;
-	left: 50%;
+	top: -280px;
+	left: 40%;
 	margin-left: -900px;
 	animation: 25s rotar linear infinite;
 	transform-origin: 50% 50%;
 }
+.malla2
+{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	margin-right: -20%;
+	margin-bottom: -20%;
+	
+	animation: 30s rotar linear infinite;
+	transform-origin: 40% 50%;
+}
+
+
+.malla3
+{
+	position: fixed;
+	top: -200px;
+	bottom: 100px;
+	width: 50%;
+	margin-left: 93%;
+	margin-bottom: 50%;
+	height: 500px;
+	width: 500px;
+	
+	animation: 40s rotar linear infinite;
+	transform-origin: 30% 40%;
+}
+
+
+.malla4
+{
+	position: fixed;
+	top: 900px;
+	bottom: 100px;
+	width: 50%;
+	margin-right: : 93%;
+	margin-bottom: 50%;
+	height: 500px;
+	width: 500px;
+	margin-left: -100px;
+	
+	animation: 46s rotar linear infinite;
+	transform-origin: 30% 40%;
+}
+
+
+
+
+
  @keyframes rotar {
  from {
 transform: rotate(0deg);
@@ -216,7 +292,7 @@ transform: rotate(360deg);
 .redes
 {
 	position:absolute;
-	right:25px; top:25px;
+	right:220px; top:50px;
 }
 .redes ul
 {
@@ -228,6 +304,7 @@ transform: rotate(360deg);
 {
 	display:inline-block;
 	margin-right:10px;
+
 }
 .menu-redes 
 {
@@ -298,6 +375,30 @@ transform: rotate(360deg);
 	display:inline-block;
 	width:33%;
 	cursor:pointer;
+	position:relative;
+}
+.gallery-items a
+{
+	position:absolute;
+	bottom:10%;
+	left: 5%;
+}
+.descri-img
+{
+	position: absolute;
+    width: 80%;
+    bottom: 20%;
+    left: 5%;
+}
+.descri-img h4
+{
+	font-weight:bold;
+}
+.descri-img h5
+{
+	    color: #74e2d5;
+    font-size: 15px;
+    margin: 0;
 }
 .list-datos
 {
@@ -354,7 +455,10 @@ form input
 		  margin-top: 10px;
 		  color: white;
 	  }
-
+		.fechas:hover p
+		{
+			color:white;
+		}
 	  .fechas h2
 	  {
 		      margin-bottom: 0px;
@@ -436,6 +540,73 @@ form input
 	background-color: white;
 	color: #a932d7;
 }
+.head-mobile
+{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a932d7;
+    margin-bottom: 25px;
+	display: none;
+}
+.head-mobile a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.head-mobile span
+{
+	    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #73e0d3;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    margin-right: 15px;
+	    font-size: 14px;
+}
+
+.arrow1 {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #73e0d3;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 0;
+    margin-left: -40px;
+    margin-top: -20px;
+    background: #1b0c29;
+	display: none;
+}
+.arrow2 {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #73e0d3;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+	display: none;
+	    background-color: #1b0c29;
+	margin-right: -40px;
+	right: 0;
+}
 /* On small screens, set height to 'auto' for sidenav and grid */
 	 @media screen and (max-width: 1600px) {
 	.mod-detail {
@@ -444,7 +615,17 @@ form input
 }  
 	  
 	  } 
-	  
+ @media screen and (max-width: 1340px) {
+	 .mod-detail h2 {
+    font-size: 15px;
+	 }
+	 .mod-detail p {
+    font-size: 12px;
+}
+	 .mod-detail {
+    width: 150px;
+}
+}
 @media screen and (max-width: 767px) {
 	
 .sidenav {
@@ -457,10 +638,43 @@ form input
 }
 
 @media screen and (max-width: 991px) {
-	.mod-detail {
+	
+	.arrow1 , .arrow2
+	{
+		display: block;
+	}
+	.head-mobile
+	{
+		display: block;
+	}
+	.descri-img
+	{
+		display:none;
+	}
+	.btn-hide
+{
+	    background-color: transparent !important;
+    font-size: 0;
     width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+	}
+	.mod-detail {
+        width: 40%;
     display: block;
     margin-bottom: 25px;
+    float: left;
+    margin: 5%;
+}
+	.mod-detail h2 {
+    font-size: 16px;
+	}
+	.mod-detail p {
+    font-size: 14px;
 }
 .content-full-w
 {
@@ -478,6 +692,31 @@ form input
 {
 	display:inline-block;
 }
+	
+.content-text h2 {
+    color: #74e2d5;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}	
+	
+form {
+    border: none;
+}	
+form input {
+    border: solid 1px #73e0d3;
+}
+	.custom-btn {
+    background-color: #a932d7;
+   
+    color: #ffffff;
+   
+}
+.img-hide
+	{
+		display: none;
+	}	
 .redes
 	{
 		display:none;
@@ -485,6 +724,7 @@ form input
 	
 body, html {
 	overflow: auto;
+	overflow-x: hidden;
 }
 .custom-content {
 	width: 100%;
@@ -551,6 +791,29 @@ nav ul .active
 	margin-right: 10%;
 	margin-top: 150px;
 }
+.new-actions {
+    height: auto;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: initial;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 150px;
+    margin-bottom: 25px;
+}	
+.new-principal-img {
+    height: auto;
+    width: 80%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 .menu-mob-active {
 	width: 80%;
     height: 100%;
@@ -595,25 +858,29 @@ nav ul .active
 	display: inline-block;
 }
 footer {
-	background-color: transparent;
-	position: relative;
-	width: 80%;
-	bottom: 0;
-	height: auto;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 25px;
-	display: inline-block;
+	background-color: transparent; 
+    position: relative;
+    /* width: 80%; */
+    bottom: 0;
+    /* height: auto; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    margin-top: 50px;
+    display: inline-block;
+
 }
 .address {
 	float: initial;
-	color: #9be0d3;
+	color: #74E2D5;
 	text-align: center;
 }
+
+
 .logos {
 	float: initial;
 	text-align: center;
 }
+
 .logos img {
 	display: inline-block;
 }
@@ -621,25 +888,40 @@ footer {
 .menu-redes 
 {
 	display:block;
+	padding-top:0px;
 }
+
+
 .address
 {
 	display:none;
 }
+
+
+
 .addressMob
 {
-	    font-size: 18px;
+	font-size: 18px;
     color: #1b0c29;
     position: absolute;
     width: 100%;
     bottom: 0;
 	display:block;
 }
-.addressMob span
+.addressMob a
 {
 	display:block;
 	width:100%;
 	font-weight:bold;
+	color: #1A0D28;
+	padding-bottom: 20px;
+
+}
+.addressMob p
+{
+	    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 	
 	.col-1-2{
@@ -678,6 +960,17 @@ footer {
 .ajuste2 {
     margin-top: 30px;
 }	
-	
-	
+	.fechas {
+    width: 45%;
+		height: auto;
+	}
+	.fechas h2 {
+    font-size: 30px;
+}
+	.cruz{
+		background-image: url(../img/lines.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+	}
 }
